@@ -6,6 +6,8 @@ import Link from 'next/link'
 import Date from '../components/date'
 import { GetStaticProps } from 'next'
 
+const intro="Computer Science student of York University"
+
 export default function Home({
   allPostsData
 }: {
@@ -21,7 +23,7 @@ export default function Home({
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>[Your Self Introduction]</p>
+        <p>{intro}</p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
